@@ -35,12 +35,8 @@ jobs:
         python-version: "3.12"
 
     # TODO: Install uv on the runner
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: "3.12"
-    - uses: yezz123/setup-uv@v4
-    - run: uv --version
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v7
 
 
 
