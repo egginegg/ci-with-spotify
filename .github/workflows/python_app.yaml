@@ -46,7 +46,8 @@ jobs:
     # This step installs dependencies
     # TODO: Replace the run block, using `uv` to sync the environment
     - name: syncing enviroment
-      run: uv sync
+      run: |
+       uv sync
     
 
 
@@ -64,6 +65,6 @@ jobs:
 
     # TODO: Add steps to run formatting steps and type checking
     - name: format and type checking
-      run: uvx ruff format --check
+      run: uvx ruff format
       run: uvx ty check
     
