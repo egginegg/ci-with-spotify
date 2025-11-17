@@ -45,6 +45,8 @@ jobs:
 
     # This step installs dependencies
     # TODO: Replace the run block, using `uv` to sync the environment
+    - name: syncing enviroment
+      run: uv sync
     
 
 
